@@ -25,9 +25,13 @@ body {
     color: white;
     padding: 2em;
     text-align: center;
-    width: 15%;
+    width: 300px;
     height: 450px;
     border-radius: 2em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -64,7 +68,7 @@ p {
 }
 
 .summary {
-    width: 15%;
+    width: 300px;
     padding: 2em;
     border-radius: 0 2em 2em 0;
 }
@@ -144,6 +148,27 @@ button:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width:874px){
+    .container{
+      flex-direction: column;
+      top:0;
+      left: 0;
+      transform: translate(0%,0%);
+      border-radius: 0;
+      box-shadow: none;
+      width:100%;
+    }
+
+    .blue-container{
+      border-radius:  30px;
+    }
+
+    .blue-container,
+    .summary{
+      width:100%;
+    }
+    
+  }
 
 
 
